@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Golos Text', sans-serif;
+  margin: 0;
+  background: #0000;
+}
+
+header {
+  margin: 0 auto;
+  background-color: #000000;
+  padding: 20px 0px 10px;
+  display: flex;
+}
+
+.content {
+  padding: 0px 23px 10px 23px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  margin: 1rem;
+}
+
+.navbar {
+  margin-inline: auto;
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-around;
+  align-items: center;
+  padding-block: 1rem;
+}
+
+.navbar .nav-list li{
+  list-style-type: none;
+}
+
+.navbar .nav-list li a{
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: white;
+  padding: .5rem;
+  border-radius: 999px;
+  transition: all .2s ease-in-out;
+}
+
+.navbar .nav-list li:hover a{
+  background-color: #ffff;
+  color: black;
+}
+
+@media (max-width: 640px) {
+  .navbar {
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-around;
+    align-items: center;
+    padding-block: 1rem;
+  }
+}
+
+.rounded-profile {
+  width: 130px;
+  height: 130px;
+  border-radius: 70px;
+  object-fit: cover;
+  object-position: cover;
+  border: 5px solid #fff;
+}
+
+.navbar .header-text {
+  color: #fff;
+  text-align: center;
+}
+
+.navbar .nav-list ul{
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem 1rem;
+}
+
+.navbar .nav-list li{
+  list-style-type: none;
+}
+
+.dropdown
+
+.dropbtn {
+  background-color: black;
+  color: white;
+  border-radius: 999px;
+  font-size: 1.05rem;
+  font-weight: 500;
+  transition: all .2s ease-in-out;
+}
+
+.dropbtn:hover {
+  background-color: #ffff;
+  color: black;
+  display: flex;
+  padding: .5rem;
+}
+
+.dropdown-content {	
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 12px;
+  text-decoration: none;
+  display: flex;
+  white-space: nowrap;
+}
+
+.dropdown a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+main {
+  width: 100%;
+  display: flex;
+}
+
+@media screen and (max-width: 1000px) {
+  main {
+    flex-direction: column;
+  }
+  .courses {
+    flex-direction: column;
+  }
+}
+
+.courses {
+  display: inline;
+}
+
+.course {
+  flex-basis: 33%;
+  text-align: center;
+  color: black;
+}
+
+.image-course {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.course .card:hover {
+  background-color: black;
+  color: white;
+  transition: all .2s ease-in-out;
+}
+
+.card {
+  box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin-top: 20px;
+  background-color: #fff;
+}
+
+aside.profile-card{
+  min-width: 20%;
+  height: auto;
+  box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 2rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 60rem;
+} 
+
+.top-part-card .profile-content {
+  text-align: center;
+}
+
+.bottom-part-card {
+  text-align: center;
+}
+
+.profile-text{
+  width: auto;
+  margin: auto;
+  text-align: center;
+}
+
+.socials{
+  text-align: center;
+  display: inline;
+}
+.socials ul{
+  padding-inline-start: unset;
+}
+
+.socials a {
+  font-size: 1.5em;
+  font-weight: 400;
+  text-decoration: none;
+  color: black;
+}
+
+.socials li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 10px;
+  text-align: center;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+footer {
+  margin: 0 auto;
+  background-color: #000000;
+  padding: 2px;
+  width: 100%;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+}
